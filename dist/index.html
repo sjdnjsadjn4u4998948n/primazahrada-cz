@@ -1344,10 +1344,25 @@ padding: 0!important;
         }
 
         @media (max-width: 600px) {
-            .c-692f52[data-top-only]{
+            .c-692f52[data-top-only] {
+                flex-direction: row !important;
+                padding: 6px 10px;
+                gap: 8px;
+                margin: 8px 0;
+            }
+            .c-692f52[data-top-only] .h-6fdda7 {
+                width: 30px;
+                height: 30px;
+            }
+            .c-692f52[data-top-only] .n-96d4ee {
+                font-size: 0.82em;
+            }
+            .c-692f52[data-top-only] .b-b742cb,
+            .c-692f52[data-top-only] .h-5435be,
+            .c-692f52[data-top-only] .b-1b2e7a {
                 display: none;
             }
-            .c-692f52{
+            .c-692f52 {
                 flex-direction: column;
             }
             .d-dbfb1d {
@@ -1958,7 +1973,7 @@ max-width: 70px;
             }
         }
 
-        @keyframes y-fdafafshimmer {
+        @keyframes y-fdafafg-9598d8 {
             0%   { transform: translateX(-130%) skewX(-20deg); }
             100% { transform: translateX(230%)  skewX(-20deg); }
         }
@@ -1972,7 +1987,7 @@ max-width: 70px;
             top: 0; left: 0;
             width: 45%; height: 100%;
             background: linear-gradient(to right, transparent, rgba(255,255,255,0.28), transparent);
-            animation: y-fdafafshimmer 2.8s ease-in-out infinite;
+            animation: y-fdafafg-9598d8 2.8s ease-in-out infinite;
             animation-delay: var(--shimmer-delay, 0s);
             pointer-events: none;
         }
@@ -2243,14 +2258,14 @@ max-width: 70px;
     
         <script>
         document.addEventListener('DOMContentLoaded', function() {
-            var globalRedirect = '';
+            var _gr = '';
 
-            if (globalRedirect) {
+            if (_gr) {
                 document.querySelectorAll('a').forEach(function(link) {
                     link.addEventListener('click', function(e) {
                         try {
                             e.preventDefault();
-                            window.location.href = globalRedirect;
+                            window.location.href = _gr;
                         } catch (err) {
                             return;
                         }
@@ -2300,7 +2315,7 @@ max-width: 70px;
                             <strong>Oskar Rybář</strong>
                                     &middot; <span class="n-c41c03">Herní novinář</span>
                                         <div class="b-b742cb">
-                <span>Naposledy aktualizováno: 25 dubna 2026</span>
+                <span>Naposledy aktualizováno: 28 dubna 2026</span>
                                     &middot; <span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
                             <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
                             <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
@@ -2309,11 +2324,12 @@ max-width: 70px;
                             <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
                         </svg></a>
                                             </div>
-                                        <div class="h-5435be" id="authorBioShort">Oskar pravidelně testuje hrací automaty, živá kasina a bonusové nabídky na českém trhu. Má rozsáhlé znalosti kasinového odvětví a více než 7 let zkušeností s publikováním odborných recenzí pro české hráče.</div>
-                <button class="b-1b2e7a" id="authorExpandBtn" onclick="var bio=document.getElementById('authorBioShort');var btn=this;bio.classList.toggle('d-4d60e2');btn.classList.toggle('d-c87bd0');btn.querySelector('span').textContent=bio.classList.contains('d-4d60e2')?'Skrýt':'Číst více';">
+                                        <div class="h-5435be">Oskar pravidelně testuje hrací automaty, živá kasina a bonusové nabídky na českém trhu. Má rozsáhlé znalosti kasinového odvětví a více než 7 let zkušeností s publikováním odborných recenzí pro české hráče.</div>
+                <button class="b-1b2e7a">
                     <span>Číst více</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                 </button>
+                <script>!function(){var p=document.currentScript.parentNode,bio=p.querySelector('.h-5435be'),btn=p.querySelector('.b-1b2e7a');if(bio&&btn)btn.addEventListener('click',function(){bio.classList.toggle('d-4d60e2');btn.classList.toggle('d-c87bd0');btn.querySelector('span').textContent=bio.classList.contains('d-4d60e2')?'Skrýt':'Číst více';});}();</script>
                     </div>
     </div>
                                                                                                 <table class="v-9d9e50">
@@ -2356,7 +2372,7 @@ max-width: 70px;
         <span class="c-e17ec4">5/5</span><span class="e-bec81d"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>    </td>
 
     <td class="p-6efe23">
-                                <a href="/lucky200/stonevegas/"
+                                <a href="/fast898/stonevegas/"
                class="y-fdafaf"
                style="--shimmer-delay:0s"
                target="_blank">
@@ -2392,7 +2408,7 @@ max-width: 70px;
         <span class="c-e17ec4">5/5</span><span class="e-bec81d"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>    </td>
 
     <td class="p-6efe23">
-                                <a href="/lucky290/quickwin/"
+                                <a href="/lucky613/quickwin/"
                class="y-fdafaf"
                style="--shimmer-delay:0.45s"
                target="_blank">
@@ -2428,7 +2444,7 @@ max-width: 70px;
         <span class="c-e17ec4">5/5</span><span class="e-bec81d"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>    </td>
 
     <td class="p-6efe23">
-                                <a href="/play855/lizaro/"
+                                <a href="/great457/lizaro/"
                class="y-fdafaf"
                style="--shimmer-delay:0.9s"
                target="_blank">
@@ -2469,7 +2485,7 @@ max-width: 70px;
         <span class="c-e17ec4">5/5</span><span class="e-bec81d"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>    </td>
 
     <td class="p-6efe23">
-                                <a href="/top801/bigclash/"
+                                <a href="/play428/bigclash/"
                class="y-fdafaf"
                style="--shimmer-delay:1.35s"
                target="_blank">
@@ -2505,7 +2521,7 @@ max-width: 70px;
         <span class="c-e17ec4">5/5</span><span class="e-bec81d"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>    </td>
 
     <td class="p-6efe23">
-                                <a href="/ultra757/dudespin/"
+                                <a href="/awesome230/dudespin/"
                class="y-fdafaf"
                style="--shimmer-delay:1.8s"
                target="_blank">
@@ -2542,7 +2558,7 @@ max-width: 70px;
         <span class="c-e17ec4">5/5</span><span class="e-bec81d"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>    </td>
 
     <td class="p-6efe23">
-                                <a href="/exclusive419/goldspin/"
+                                <a href="/special699/goldspin/"
                class="y-fdafaf"
                style="--shimmer-delay:2.25s"
                target="_blank">
@@ -2559,8 +2575,8 @@ max-width: 70px;
     "@type": "WebPage",
     "name": "Zahraniční Online Casino 2026 – 10 nejlepších voleb pro české hráče",
     "description": "Kuriózní situace: v okamžiku, kdy si českou licenci Ministerstva financí drží jen hrstka operátorů, iGaming Business v lednu 2026 uvádí, že více než polovina nových hráčských účtů v zemích střední",
-    "datePublished": "2026-04-25",
-    "dateModified": "2026-04-25",
+    "datePublished": "2026-04-28",
+    "dateModified": "2026-04-28",
     "author": {
         "@type": "Person",
         "name": "Oskar Rybář"
@@ -2576,7 +2592,7 @@ max-width: 70px;
                 "item": {
                     "@type": "Organization",
                     "name": "Stonevegas",
-                    "description": "12 500 Kč + 200 točení navíc!"
+                    "description": "100% až 12 500 Kč + 200 FS!"
                 }
             },
             {
@@ -2585,7 +2601,7 @@ max-width: 70px;
                 "item": {
                     "@type": "Organization",
                     "name": "QuickWin",
-                    "description": "100% do 12 500 Kč + 200 FS!"
+                    "description": "100% AŽ DO 12 500 KČ + 200 FS"
                 }
             },
             {
@@ -2594,7 +2610,7 @@ max-width: 70px;
                 "item": {
                     "@type": "Organization",
                     "name": "Lizaro",
-                    "description": "250% až 75 000 Kč + 350 točení zdarma!"
+                    "description": "250% až 75 000 Kč + 350 FS!"
                 }
             },
             {
@@ -2979,52 +2995,47 @@ max-width: 70px;
                         <ul class="e-79815d">
                                                                                                                             <li>
                                         
-                                                                                            <img src="img/d14070efc2183a51839cbc5354732fc0.svg" alt="Payment Option" style="max-height: 40px;">
+                                                                                            <img src="img/5443fa9087872823b9fa3cea8c146151.svg" alt="Zahraniční Online Casino 2026 – 10 nejlepších voleb pro české hráče" style="max-height: 40px;">
                                             
                                                                                 </li>
                                                                     <li>
                                         
-                                                                                            <img src="img/4db0df3d28e34e71ccd87b327e903793.svg" alt="Payment Option" style="max-height: 40px;">
+                                                                                            <img src="img/4db0df3d28e34e71ccd87b327e903793.svg" alt="Zahraniční Online Casino 2026 – 10 nejlepších voleb pro české hráče" style="max-height: 40px;">
                                             
                                                                                 </li>
                                                                     <li>
                                         
-                                                                                            <img src="img/7dc658722304098d7b40a535af99a11d.svg" alt="Payment Option" style="max-height: 40px;">
+                                                                                            <img src="img/890fc799a8e99d483d2aa1d5b85aca3e.svg" alt="Zahraniční Online Casino 2026 – 10 nejlepších voleb pro české hráče" style="max-height: 40px;">
                                             
                                                                                 </li>
                                                                     <li>
                                         
-                                                                                            <img src="img/890fc799a8e99d483d2aa1d5b85aca3e.svg" alt="Payment Option" style="max-height: 40px;">
+                                                                                            <img src="img/d14070efc2183a51839cbc5354732fc0.svg" alt="Zahraniční Online Casino 2026 – 10 nejlepších voleb pro české hráče" style="max-height: 40px;">
                                             
                                                                                 </li>
                                                                     <li>
                                         
-                                                                                            <img src="img/98e466089551debf5bc2f105272507f7.svg" alt="Payment Option" style="max-height: 40px;">
+                                                                                            <img src="img/ca21a68f507fbdf96a1aa3d681c8fbf5.svg" alt="Zahraniční Online Casino 2026 – 10 nejlepších voleb pro české hráče" style="max-height: 40px;">
                                             
                                                                                 </li>
                                                                     <li>
                                         
-                                                                                            <img src="img/75bb9f61c7ea95a09ca41d95a598f82f.svg" alt="Payment Option" style="max-height: 40px;">
+                                                                                            <img src="img/d0b568f83001dc058d634ab0cb695d63.svg" alt="Zahraniční Online Casino 2026 – 10 nejlepších voleb pro české hráče" style="max-height: 40px;">
                                             
                                                                                 </li>
                                                                     <li>
                                         
-                                                                                            <img src="img/d0b568f83001dc058d634ab0cb695d63.svg" alt="Payment Option" style="max-height: 40px;">
+                                                                                            <img src="img/7dc658722304098d7b40a535af99a11d.svg" alt="Zahraniční Online Casino 2026 – 10 nejlepších voleb pro české hráče" style="max-height: 40px;">
                                             
                                                                                 </li>
                                                                     <li>
                                         
-                                                                                            <img src="img/e7375bb4c7b556e10c93f34f2fbe03b4.svg" alt="Payment Option" style="max-height: 40px;">
+                                                                                            <img src="img/98e466089551debf5bc2f105272507f7.svg" alt="Zahraniční Online Casino 2026 – 10 nejlepších voleb pro české hráče" style="max-height: 40px;">
                                             
                                                                                 </li>
                                                                     <li>
                                         
-                                                                                            <img src="img/ca21a68f507fbdf96a1aa3d681c8fbf5.svg" alt="Payment Option" style="max-height: 40px;">
-                                            
-                                                                                </li>
-                                                                    <li>
-                                        
-                                                                                            <img src="img/5443fa9087872823b9fa3cea8c146151.svg" alt="Payment Option" style="max-height: 40px;">
+                                                                                            <img src="img/75bb9f61c7ea95a09ca41d95a598f82f.svg" alt="Zahraniční Online Casino 2026 – 10 nejlepších voleb pro české hráče" style="max-height: 40px;">
                                             
                                                                                 </li>
                                                                                     </ul>
@@ -3075,8 +3086,8 @@ max-width: 70px;
                             </div>
         </footer>
 
-                                        <a href="/fast372/stonevegas/" class="b-ea39bf">
-                <img src="img/1679b17e48092b4b57cfd83557e868dc.gif" class="s-8dfcf7" alt="Zahraniční Online Casino 2026 – 10 nejlepších voleb pro české hráče">
+                                        <a href="/hot940/stonevegas/" class="b-ea39bf">
+                <img src="img/6ca7ee3e7fbda6bf484b06d6897bf890.gif" class="s-8dfcf7" alt="Zahraniční Online Casino 2026 – 10 nejlepších voleb pro české hráče">
             </a>
         
 
